@@ -9,7 +9,7 @@
   <h1>📊 ตารางคะแนน</h1>
   <ul id="board"></ul>
   <script>
-    fetch("http://localhost:3000/leaderboard")
+    fetch("https://robot-c-platform.onrender.com/leaderboard")
       .then(res => res.json())
       .then(data => {
         const board = document.getElementById("board");
