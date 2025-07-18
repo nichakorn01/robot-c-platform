@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <h1>📊 ตารางคะแนน</h1>
+  <ul id="board"></ul>
+  <script>
+    fetch("http://localhost:3000/leaderboard")
+      .then(res => res.json())
+      .then(data => {
+        const board = document.getElementById("board");
+        board.innerHTML = data.map(p => `<li>${p.name}: ${p.score} คะแนน</li>`).join("");
+      });
+  </script>
+</body>
+</html>

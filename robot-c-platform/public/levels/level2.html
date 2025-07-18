@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ด่านที่ 2 - ตัวแปร</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <header><h1>ด่านที่ 2: ตัวแปร</h1></header>
+  <main>
+    <div id="robot"><img src="../assets/robot.png" width="100"></div>
+    <p>จงประกาศตัวแปรชื่อ <code>age</code> และกำหนดค่าเป็น <code>10</code></p>
+    <pre>int age = 10;</pre>
+    <input type="text" id="codeInput" oninput="checkCode()" />
+    <p id="feedback">🕹️ รอคำสั่งของคุณอยู่...</p>
+    <button onclick="reset()">เริ่มใหม่</button>
+  </main>
+  <audio id="successSound" src="../assets/sound-success.mp3"></audio>
+  <audio id="errorSound" src="../assets/sound-error.mp3"></audio>
+  <script src="../../script.js"></script>
+  <script>const correctCode = 'int age = 10;';</script>
+</body>
+</html>

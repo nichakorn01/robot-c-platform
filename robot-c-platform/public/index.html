@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เริ่มต้น - เกมหุ่นยนต์</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <h1>🤖 กรอกชื่อของคุณเพื่อเริ่มเกม</h1>
+  <input type="text" id="playerName" placeholder="ชื่อของคุณ...">
+  <button onclick="startGame()">เริ่มเกม</button>
+  <script>
+    function startGame() {
+      const name = document.getElementById("playerName").value;
+      if (!name) return alert("กรุณาใส่ชื่อ");
+      localStorage.setItem("playerName", name);
+      localStorage.setItem("score", 0);
+      window.location.href = "levels/level1.html";
+    }
+  </script>
+</body>
+</html>

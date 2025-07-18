@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  background: #f0f4c3;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 60%;
+}
+.correct {
+  background: #c8f7c5;
+}
+.wrong {
+  background: #ffcdd2;
+}
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
