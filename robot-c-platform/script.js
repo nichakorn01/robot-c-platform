@@ -27,7 +27,7 @@ function playSound(type) {
   document.getElementById(type === "success" ? "successSound" : "errorSound").play();
 }
 function submitScore() {
-  fetch("http://localhost:3000/score", {
+  fetch("https://robot-c-platform.onrender.com/score", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({
